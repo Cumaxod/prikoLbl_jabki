@@ -15,6 +15,9 @@ public class Na_ball_2 {
         if(podimae > derevo){
             System.out.println("за денёк залезет");
         }
+        else if(spuscae > podimae){
+            System.out.println("бедолага не залезет");
+        }
         else if(podimae > spuscae){
             do{
                 days++;
