@@ -3,16 +3,16 @@ package credit;
 public class Na_zachet_3 {
     public static void main(String[] args) {
         int n = (int) (Math.random() * 28800);
-        System.out.println("до конца рабочего дня в секундах:"); // для Петрова
-        System.out.println(n);
+        System.out.println("до конца рабочего дня в секундах: " + n); // для Петрова
         int hours = n / 3600;
-        System.out.println(hours);
+        int minutes = (n - hours * 3600) / 60;
+        int seconds = (n - hours * 3600) % 60;
         if (hours == 0){
             System.out.println("Остался завершающий час работы");
         }else{
             System.out.println("до конца рабочего дня осталось столько часов");
             System.out.println(hours);
         }
-
+        System.out.println("до конца рабочего дня: " + hours + "ч. " + minutes + "мин. " + seconds + "сек.");
     }
 }
