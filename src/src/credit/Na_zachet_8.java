@@ -1,8 +1,8 @@
-﻿package credit;
+package credit;
 
 public class Na_zachet_8 {
     public static void main(String[] args) {
-        String text = ("In mathematics and computer science, an algorithm is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.");
+        String text = ("Algorithms are used as specifications for performing calculations and data processing.");
         String[] Slovechki = text.split("\\s+");
         String max = "";
         String min = "";
@@ -13,7 +13,7 @@ public class Na_zachet_8 {
                 maxn = word.length();
                 max = word;
             }
-            if(word.length() > minn){
+            if(word.length() <= minn){
                 minn = word.length();
                 min = word;
             }
@@ -30,4 +30,3 @@ public class Na_zachet_8 {
         System.out.println(text);
     }
 }
-//In mathematics and computer science, an algorithm is a finite sequence of rigorous a, typically used to solve a class of specific problems or to perform instructions computation.
